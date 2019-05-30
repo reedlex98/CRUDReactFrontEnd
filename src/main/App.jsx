@@ -8,14 +8,14 @@ import Nav from '../components/template/Nav'
 import Footer from '../components/template/Footer'
 
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom' // Nesse caso, podem ser usados tanto o BrowserRouter quanto o HashRouter. Entretanto, o BrowserRouter pode vir a dar alguns problemas após o deploy
+import { HashRouter } from 'react-router-dom' // Nesse caso, podem ser usados tanto o BrowserRouter quanto o HashRouter. Entretanto, o BrowserRouter pode vir a dar alguns problemas após o deploy
 
 export default props =>
-    <BrowserRouter>
+    <HashRouter>
         <div className="app">
             <Logo />
             <Nav />
             <Routes/>
             <Footer />
         </div>
-    </BrowserRouter>
+    </HashRouter>
